@@ -36,7 +36,7 @@ function getData() {
             console.log('Sconto: ' + c.getSaldoCapo());
             document.getElementById('table').innerHTML +=
                 `<tr class="text-center">
-            <td>${c.id}</td>
+            <th class="text-success">${c.id}</th>
             <td>${c.capo}</td>
             <td>${c.colore}</td>
             <td>${c.prezzoivaesclusa} &euro;</td>
