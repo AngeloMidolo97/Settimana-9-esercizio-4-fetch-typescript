@@ -34,6 +34,17 @@ function getData() {
             console.table(c);
             console.log('Totale: ' + c.getAcquistoCapo());
             console.log('Sconto: ' + c.getSaldoCapo());
+            document.getElementById('table').innerHTML +=
+                `<tr class="text-center">
+            <td>${c.id}</td>
+            <td>${c.capo}</td>
+            <td>${c.colore}</td>
+            <td>${c.prezzoivaesclusa} &euro;</td>
+            <td>${c.prezzoivainclusa} &euro;</td>
+            <td>${c.saldo} %</td>
+            <td>${c.getSaldoCapo()} &euro;</td>
+            <td>${c.getAcquistoCapo().toFixed(2)} &euro;</td>
+            </tr>`;
         });
     });
 }
